@@ -33,8 +33,8 @@ public class Project {
     }
 
     private static ModuleLayer createLayerB(ModuleLayer parentLayer) {
-        var moduleX = resolveModulePath("com.google.code.gson", "gson", "2.8.6");
-        var moduleY = resolveModulePath("com.google.guava", "guava", "29.0-jre");
+        var moduleY = resolveModulePath("com.google.code.gson", "gson", "2.8.6");
+        var moduleX = resolveModulePath("com.google.guava", "guava", "29.0-jre");
         var projectLayer = createLayer(List.of(parentLayer), List.of(moduleX, moduleY));
         System.out.println("Created layer B: " + projectLayer);
         return projectLayer;
